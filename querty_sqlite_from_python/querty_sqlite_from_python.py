@@ -14,8 +14,25 @@ cursor = conn.cursor()
 # """
 # cursor.execute(query)
 # majors = cursor.fetchall()
-# print(majors[0:3])
+# # print(majors[0:3])
 
-first_result = cursor.fetchone()
-second_result = cursor.fetchone()
-next_five_results = cursor.fetchmany(5)
+# query = """
+# SELECT
+#     Major,
+#     Major_category
+# FROM recent_grads;
+# """
+# cursor.execute(query)
+# five_results = cursor.fetchmany(5)
+# print(five_results)
+
+# query = """
+# SELECT
+#     Major
+# FROM recent_grads
+# ORDER BY Major DESC
+# """
+# cursor.execute(query)
+# reverse_alphabetical = cursor.fetchall()
+# print(reverse_alphabetical[0:5])
+# conn.close()
