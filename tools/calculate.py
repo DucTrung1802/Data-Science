@@ -10,7 +10,7 @@ def read_numbers_from_file(filename):
     try:
         with open(full_filename, 'r') as file:
             for line in file:
-                number = int(line.strip())
+                number = float(line.strip())
                 numbers.append(number)
     except FileNotFoundError:
         print("File not found.")
