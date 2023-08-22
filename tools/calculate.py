@@ -23,6 +23,7 @@ def read_numbers_from_file(filename):
 def main():
     number_list = read_numbers_from_file(FILENAME)
     print("List of numbers:", number_list)
+    print("Size of data set: ", len(number_list))
     print("Mean: ", statistics.mean(number_list))    
     print("Stddev: ", statistics.stdev(number_list))
 
